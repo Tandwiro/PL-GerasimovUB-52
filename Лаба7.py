@@ -1,6 +1,6 @@
 # Задачи "Практика 7"
 # Задача 7.1
-# import math
+import math
 
 # Задача 3.1
 print("Задача 3.1")
@@ -69,5 +69,6 @@ def zam(x):
     tmp = X[0]
     x[0] = X[len(X)-1]
     X[len(X)-1]=tmp
+
 
     
