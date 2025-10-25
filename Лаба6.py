@@ -48,10 +48,12 @@ print()
 print("Задача 8.2")
 num = [1.8, 0, 2.9, 3.1, 0, 2.5, 5.6, 0]
 srzanch = sum(num) / len(num)
+print("Исходный массив:", num)
 print("Ср. Ариф. (без округления): ", srzanch)
 
 for i in range(len(num)):
     if num[i] == 0:
         num[i] = srzanch
 
+print("Изменённый массив:", num)
 print("Ср. Ариф.: ", round(srzanch, 2))
