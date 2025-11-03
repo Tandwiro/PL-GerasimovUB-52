@@ -1,36 +1,53 @@
 # Задачи "Практика 4"
-# Задача 4.3
-print("Номер 4 - 3.1")
-a = int(input("num1: "))
-b = int(input("num2: "))
-
-if a <= b:
-    res = list(range(a, b + 1))
+print("Номер 1")
+a1 = int(input("num1: "))
+b1 = int(input("num2: "))
+if a1 <= b1:
+    res = list(range(a1, b1 + 1))
     print(res)
 else:
-    print("ERROR!!!")
+    print("Ошибка!")
 print()
 
-# Задача 4 - 3.2
-print("Номер 4.2")
-a = int(input("num1: "))
-b = int(input("num2: "))
-if a < b:
-    for i in range(a, b + 1):
-        print(i)
+
+print("Номер 2")
+a2 = int(input("num1: "))
+b2 = int(input("num2: "))
+if a2 < b2:
+    res1 = list(range(a2, b2 + 1))
+    print(res1)
 else:
-    for i in range(a, b - 1, -1):
-        print(i)
+    res2 = list(range(a2, b2 - 1, -1))
+    print(res2)
 print()
 
-# Задача 4 - 3.3
-print("Номер 4.3")
-a = int(input("num1: "))
-b = int(input("num2: "))
-if a > b:
-    for i in range(a, b - 1, -1):
+
+print("Номер 3")
+a3 = int(input("num1: "))
+b3 = int(input("num2: "))
+if a3 > b3:
+    for i in range(a3, b3 - 1, -1):
         if i % 2 == 0:
             print(i)
 else:
-    print("ERROR!!!")
+    print("Ошибка!")
 print()
+
+
+print("Номер 5")
+n5 = int(input("number: "))
+k = 0
+for i in range(1, n5 + 1):
+    k += i**3
+print(k)
+print()
+
+
+print("Номер 7")
+n7 = int(input("number: "))
+fac = 1
+k = 0
+for i in range(1, n7 + 1):
+    fac *= i
+    k += fac
+print(k)
