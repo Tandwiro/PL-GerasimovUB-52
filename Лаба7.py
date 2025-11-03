@@ -1,74 +1,80 @@
-# Задачи "Практика 7"
-# Задача 7.1
+# Практика 7
 import math
 
-# Задача 3.1
 print("Задача 3.1")
-a1 = float(input("1й катет первого треугольника: "))
-b1 = float(input("2й катет первого треугольника: "))
+# a1 = float(input("1й катет первого треугольника: "))
+# b1 = float(input("2й катет первого треугольника: "))
+# a2 = float(input("1й катет второго треугольника: "))
+# b2 = float(input("2й катет второго треугольника: "))
+a1 = 10
+b1 = 15
+a2 = 13
+b2 = 18
 
-a2 = float(input("1й катет второго треугольника: "))
-b2 = float(input("2й катет второго треугольника: "))
+def hyp(a,b):
+    h = math.sqrt((a**2) + (b**2))
+    return h
 
-def hypot(a,b):
-    hyp = math.sqrt((a**2) + (b**2))
-    return hyp
+h1 = hyp(a1,b1)
+h2 = hyp(a2,b2)
+print(h1)
+print(h2)
 
-hyp1 = hypot(a1,b1)
-hyp2 = hypot(a2,b2)
-print(hyp1)
-print(hyp2)
-
-if hyp1 > hyp2:
+if h1 > h2:
     print("Гипотенуза первого треугольника БОЛЬШЕ")
     print("Гипотенуза второго треугольника МЕНЬШЕ")
-elif hyp1 < hyp2:
+elif h1 < h2:
     print("Гипотенуза первого треугольника МЕНЬШЕ")
     print("Гипотенуза второго треугольника БОЛЬШЕ")
 else:
     print("Гипотенузы РАВНЫ")
+print()
+
+print("Номер 3.2")
+# n = input()
+n = "Python"
+s = n.split()
+sort = []
+
+for i in s:
+    sort1 = sorted(i)
+    sort2 = ''.join(sort1)
+    sort.append(sort2)
+
+res = ' '.join(sort)
+print(res)
+print()
 
 
-# Задача 7.2
-print("Задача 3.2")
-def sorting_letters(text):
-    letters = text.split()
-    res_let = []
-    for letter in letters:
-        letters = list(letter)
-        letters.sort()
-        sorted_letter = ' '.join(letters)
-        res_let.append(sorted_letter)
-    result = ''.join(res_let)
-    return result
-
-n = input("Ввод: ")
-sort_n = sorting_letters(n)
-print(n)
-print(sort_n)
-
-
-# Задача 7.3
-print("Задача 8.1")
+print("Номер 8.1")
 n = 100
 for i in range(1, n + 1):
     num = i
     flag = True
 
     while num > 0:
-        digit = num % 10
-        if digit == 0 or i % digit != 0:
+        d = num % 10
+        if d == 0 or i % d != 0:
             flag = False
             break
         num //= 10
     if flag:
         print(i, end='')
+print()
+print()
 
-print("Задача 8.2")
-def zam(x):
-    tmp = X[0]
-    x[0] = X[len(X)-1]
-    X[len(X)-1]=tmp
-
-
-    
+print("Номер 8.2")
+def element(mas):
+    if len(mas) > 1:
+        first = mas[0]
+        last = mas[-1]
+        mas[0] = last
+        mas[-1] = first
+m = int(input("Длина массива: "))
+A = []
+for i in range(m):
+    print()
+    x = int(input())
+    A.append(x)
+element(A)
+print(A)
