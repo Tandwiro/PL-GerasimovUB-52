@@ -1,23 +1,30 @@
-# Задачи "Практика 5"
-# Задача 5.3
+# Практика 5
 
-print("Задача 5.3")
+print("Номер 3")
 # n3 = input("Введите строку: \n")
-n3 = "Строки с точкой заменяются на пробел: ->.<- , ->.<-, ->.<- "
-zamena = n3.replace('.', '')
+n3 = "->.<- , ->.<-, ->.<-"
+zam = n3.replace('.', '')
 
-res = len(n3) - len(zamena)
-
-print(n3)
-print("Переменная ->", zamena)
+res = len(n3) - len(zam)
 print("Кол-во замен: ", res)
 print()
 
 
-# 5.8
-print("Задача 5.8")
+print("Номер 7")
+n7 = "привет пока пакет"
+n = len(n7)
+pol = n//2
+first = n7[:pol]
+second = n7[pol:]
+
+first = first.replace("п", "*")
+res = first + second
+print(res)
+
+
+print("Номер 8")
 n8 = "Дана строка, заканчивающаяся точкой ."
 n8 = n8.strip(".")
 m = n8.split()
-print("Кол-во слов в строке: ",len(m))
-
+print(m)
+print("Кол-во слов в строке: ", len(m))
