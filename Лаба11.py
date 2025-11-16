@@ -1,5 +1,4 @@
 # Практика 11
-# Создание GUI
 from tkinter import *
 from tkinter import messagebox, filedialog
 
@@ -162,5 +161,6 @@ byn_load = Button(window,
                   command=menu
                   )
 byn_load.grid(column=6, row=3)
+
 
 window.mainloop()
