@@ -53,7 +53,7 @@ def calculator():
     elif op == "*":
         res = a * b
     elif op == "/":
-        res = a // b
+        res = a / b
 
     oplbl.config(text=f"Вывод: {res}")
 
@@ -164,3 +164,4 @@ byn_load.grid(column=6, row=3)
 
 
 window.mainloop()
+
