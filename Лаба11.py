@@ -105,9 +105,9 @@ def ckbox():
     select = []
     if chk_var1.get():
         select.append("Первый")
-    elif chk_var2.get():
+    if chk_var2.get():
         select.append("Второй")
-    elif chk_var3.get():
+    if chk_var3.get():
         select.append("Третий")
 
     if select:
@@ -164,4 +164,5 @@ byn_load.grid(column=6, row=3)
 
 
 window.mainloop()
+
 
